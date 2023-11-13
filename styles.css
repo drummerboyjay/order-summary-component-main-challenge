@@ -1,0 +1,164 @@
+@import 'https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap';
+
+:root {
+    --cl-1: hsl(225, 100%, 94%);
+    --cl-2: hsl(245, 75%, 52%);
+    --cl-3: hsl(225, 100%, 98%);
+    --cl-4: hsl(224, 23%, 55%);
+    --cl-5: hsl(223, 47%, 23%);
+
+
+    --fw-500: 500;
+    --fw-700: 700;
+    --fw-900: 900;
+    
+    --fs-xl: 1.5rem;
+    --fs-lg: 1.125rem;
+    --fs-md: 1rem;
+    --fs-sm: 0.5rem;
+
+    --mb-xl: 2em;
+    --mb-lg: 1.5em;
+    --mb-md: 1em;
+    --mb-sm: 0.5em;
+    --mb-xs: 0.25em;
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+h1,
+h2 {
+    color: var(--cl-5);
+    line-height: 1.5;
+}
+
+/* utilities */
+.flex {
+    display: flex;
+    align-items: center;
+
+}
+
+p {
+    color: var(--cl-4);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.order {
+    min-height: 100vh;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left;
+    background-color: var(--cl-1);
+}
+
+.inner-main {
+    min-height: inherit;
+    justify-content: center;
+    padding: 2em 0;
+}
+
+.order-card {
+    width: 90%;
+    max-width: 450px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-sizing: 8px 8px 50px var(--cl-4);
+}
+
+.order-row-1 {
+    height: auto;
+    
+}
+.order-img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.order-title,
+.order-words {
+    text-align: center;    
+    
+}
+
+.order-title {
+    margin-bottom: var(--mb-sm);
+    font-weight: var(--fw-900);
+
+}
+
+.order-words {
+    margin-bottom: var(--mb-md);
+}
+
+.order-row-2 {
+    padding: 2em;
+    background-color: #fff;
+
+}
+.order-plan {
+    background-color: var(--cl-3);
+    justify-content: space-between;
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: var(--mb-lg);
+}
+
+.order-icon {
+    margin-right: var(--mb-lg);
+}
+
+.order-year{
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-900);
+}
+
+.order-link{
+    color: var(--cl-2);
+    font-weight: var(--fw-900);
+}
+
+.order-btn {
+    display: block;
+    text-decoration: none;
+    font-weight: var(--fw-700);
+}
+
+.order-btn-1 {
+    text-align: center;
+    color: var(--cl-3);
+    background-color: var(--cl-2);
+    padding: var(--mb-md);
+    margin-bottom: var(--mb-lg);
+    border-radius: 10px;
+    box-shadow: 0 15px 50px -15px  var(--cl-2);
+}
+
+.order-btn-2 {
+    width: max-content;
+    margin: 0 auto;
+    
+}
+
+@media (max-width: 32em){
+    .order {
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+    .order-card{
+        max-width: 380px;
+    }
+}
